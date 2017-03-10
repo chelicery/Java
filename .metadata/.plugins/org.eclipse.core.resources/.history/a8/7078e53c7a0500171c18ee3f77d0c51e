@@ -1,0 +1,36 @@
+import java.util.Arrays;
+public class Program {
+	public static void main(String[]args){
+		
+	Product chleb  = new Product("02", "Chleb", 3, 1);
+	Product cukier = new Product("03", "Cukier", 5, 1);
+	Product pepsi  = new Product("04", "Pepsi", 4, 1);
+	Product banan  = new Product("05", "Banan", 2, 1);
+	Product jajka  = new Product("06", "Jajka", 5,1);
+	Product cebula = new Product("07", "Cebula", 10,1);
+	Product ser    = new Product("08", "Serek", 11, 1);
+	Product woda   = new Product("09", "Woda", 20, 10);
+	Product majonez= new Product("10", "Majonez", 4, 1);
+	Product keczup = new Product("11", "Keczup", 3, 1);
+	Product[] products = {chleb, cukier, pepsi, banan, jajka, cebula, ser, woda, majonez, keczup};
+	PriceComparator komp = new PriceComparator();
+	//sort by price \/
+	Arrays.sort(products, komp);	
+	//total basket amount
+	Basket.basketAmount(products);
+	System.out.println("*************************");
+	//print n cheapest products (n == 3 )
+	Basket.getCheapestNProducts(products, 3);
+	for(int z = 0; z < 40; z++){System.out.print('*');}
+
+	//print n most expensive products (n == 2)
+	Basket.getMostExpensiveProducts(products, 2);
+	
+	
+
+	}
+
+	
+
+	
+}

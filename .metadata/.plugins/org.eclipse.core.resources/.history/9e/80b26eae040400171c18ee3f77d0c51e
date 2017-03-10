@@ -1,0 +1,38 @@
+public class Product {
+	String code;
+	String name;
+	double price;
+	double discountPrice;
+	double sum = 0;
+	
+	Product(String code, String name, double price, double discountPrice){
+		this.code = code;
+		this.name = name;
+		this.price = price;
+		this.discountPrice = discountPrice;		
+	}
+	
+	Product products[];
+	public void showInfo(){
+		System.out.println("kod prod: " + code + "nazwa prod: " + name + " cena: " + price + " cena po obnizce: " + discountPrice);
+		
+	}
+	
+	public void priceOfProducts(){
+		for(int i = 0; i < products.length; i++){
+	
+		sum = sum + products[i].price;	
+		}
+		System.out.println("Suma koszyka = " + sum);
+	}
+	public void iterateProducts() {
+		for(int i = 0; i < products.length; i++){
+			products[i].showInfo();		
+		}
+	
+	}
+
+	
+	
+	
+}

@@ -1,0 +1,32 @@
+public class Program {
+	public static void main(String[]args){
+	
+			
+	Product chleb  = new Product("02", "Chleb", 3, 2.5);
+	Product cukier = new Product("03", "Cukier", 5, 4);
+	Product pepsi  = new Product("04", "Pepsi", 4, 3.5);
+	Product banan  = new Product("05", "Banan", 2, 2);
+	Product jajka  = new Product("06", "Jajka", 5, 4);
+	Product cebula = new Product("07", "Cebula", 10, 10);
+	Product ser    = new Product("08", "Serek", 11, 10);
+	Product woda   = new Product("09", "Woda", 20, 15);
+	Product majonez= new Product("10", "Majonez", 4, 3);
+	Product keczup = new Product("11", "Keczup", 3, 2.5);
+	
+	
+	Product[] products = {chleb, cukier, pepsi, banan, jajka, cebula, ser, woda, majonez, keczup};
+	
+	basketAmount(products);
+		
+	
+			
+	}
+    public static void basketAmount(Product[] products){
+        for(int i = 0; i < products.length; i ++){
+        	System.out.println("kod prod: " + products[i].getCode() + "\tnazwa prod: " + products[i].getName() + "\t cena: " + products[i].getPrice() + "\tcena po obnizce: " + products[i].getDiscountPrice());        	
+        }
+    }	
+	
+	
+	
+	}

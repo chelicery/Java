@@ -1,0 +1,10 @@
+public class Program {
+	public static void main(String[]args){
+	Product mleko = new Product("0001", "mleko", 12, 10);
+	
+	System.out.println("produkt cena:  " + mleko.price);
+	
+	mleko.priceOfProducts();
+	
+	}
+}

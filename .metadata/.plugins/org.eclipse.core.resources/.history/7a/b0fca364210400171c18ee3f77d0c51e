@@ -1,0 +1,17 @@
+public class Product {
+	String code;
+	String name;
+	double price;
+	double discountPrice;
+	static double sum = 0;
+	
+	
+	Product(String code, String name, double price, double discountPrice){
+		this.code = code;
+		this.name = name;
+		this.price = price;
+		this.discountPrice = discountPrice;		
+	}
+	
+	
+}

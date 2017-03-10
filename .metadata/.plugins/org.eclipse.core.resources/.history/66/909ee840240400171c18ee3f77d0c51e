@@ -1,0 +1,24 @@
+public class Program {
+	public static void main(String[]args){
+	Product mleko = new Product("0001", "mleko", 12, 10);
+	
+	System.out.println("produkt cena:  " + mleko.getPrice());
+	
+	mleko.showInfo();
+	
+	Product products[] = new Product[10];
+			
+	products[0] = new Product("0002", "Chleb", 3, 2.5);
+	products[1] = new Product("0003", "Cukier", 5, 4);
+	products[2] = new Product("0004", "Pepsi", 4, 3.5);
+	products[3] = new Product("0005", "Banan", 2, 2);
+	products[4] = new Product("0006", "Jajka", 5, 4);
+	products[5] = new Product("0007", "Cebula", 10, 10);
+	products[6] = new Product("0008", "Ser", 11, 10);
+	products[7] = new Product("0009", "Woda", 20, 15);
+	products[8] = new Product("0010", "Majonez", 4, 3);
+	products[9] = new Product("0011", "Keczup", 3, 2.5);
+	
+	
+	}
+}

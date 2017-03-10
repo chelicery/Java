@@ -1,0 +1,30 @@
+public class Product {
+	private String code;
+	private String name;
+	private double price;
+	private double discountPrice;
+	private int quantity;
+	
+	
+	Product(String code, String name, double price, double discountPrice, int quantity){
+		this.code = code;
+		this.name = name;
+		this.price = price;
+		this.discountPrice = discountPrice;		
+		this.quantity = quantity;
+	}	
+	String getCode() {return this.code;}
+	String getName() {return this.name;}
+	double getPrice(){return this.price;}
+	double getDiscountPrice(){return this.discountPrice;}
+	int getQuantity() {return this.quantity;}
+	
+	int setQuantity(int q){ return q;}
+	
+	public void showInfo(){
+		System.out.println("kod prod: " + code + "\tnazwa prod: " + name + "\tcena: " + price + "\tcena po obnizce: " + discountPrice);
+	}
+	
+
+}
+

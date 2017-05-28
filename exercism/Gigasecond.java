@@ -1,18 +1,24 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.time.*;
 
 class Gigasecond {
+    protected LocalDateTime birthDateTime;
 
     Gigasecond(LocalDate birthDate) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.birthDateTime  = birthDate.atTime(0,0,0);
     }
 
     Gigasecond(LocalDateTime birthDateTime) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.birthDateTime = birthDateTime;
     }
 
     LocalDateTime getDate() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+    return birthDateTime.plus(1_000_000_000, ChronoUnit.SECONDS);
     }
 
 }
